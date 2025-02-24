@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise Materiais DMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Análise Materiais DMC</h1>
+        </header>
+
+        <div class="search-bar">
+            <label for="searchNumber">Número do Desenho:</label>
+            <div class="search">
+                <input type="number" id="searchNumber" placeholder="Digite o número do desenho">
+                <button type="button" onclick="searchPiece()">Buscar</button>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Dados da peça atual -->
+            <section id="dadosPecaAtual">
+                <h2>Dados da Peça Atual</h2>
+                <label for="drawingNumber">Número do desenho:</label>
+                <input type="number" id="drawingNumber" class="readonly-input" readonly>
+
+                <label for="pieceName">Nome da Peça:</label>
+                <input type="text" id="pieceName" class="readonly-input" readonly>
+
+                <label for="line">Linha:</label>
+                <input type="number" id="line" class="readonly-input" readonly>
+
+                <label for="materialType">Material:</label>
+                <input type="text" id="materialType" class="readonly-input" readonly>
+
+                <label for="thickness">Espessura:</label>
+                <input type="number" id="thickness" class="readonly-input" readonly>
+
+                <label for="width">Largura:</label>
+                <input type="number" id="width" class="readonly-input" readonly>
+
+                <label for="length">Comprimento:</label>
+                <input type="number" id="length" class="readonly-input" readonly>
+
+                <label for="blankNumber">Blank:</label>
+                <input type="number" id="blankNumber" class="readonly-input" readonly>
+            </section>
+
+            <!-- Proposta de redução -->
+            <section id="propostaReducao">
+                <h2>Proposta de Redução</h2>
+                <label for="reductionLength">Reduzir Comprimento:</label>
+                <input type="number" id="reductionLength" step="0.01">
+
+                <label for="reductionThickness">Reduzir Espessura:</label>
+                <input type="number" id="reductionThickness" step="0.01">
+
+                <label for="reductionWidth">Reduzir Largura:</label>
+                <input type="number" id="reductionWidth" step="0.01">
+
+                <label for="materialAlteration">Alterar Material:</label>
+                <select id="materialAlteration">
+                    <option value="">Selecione</option>
+                    <option value="IF180">IF180</option>
+                    <option value="CR06">CR06</option>
+                    <option value="CR04">CR04</option>
+                    <option value="CR02">CR02</option>
+                    <option value="FEE340">FEE340</option>
+                    <option value="DP600">DP600</option>
+                </select>
+
+                <label for="amountParts">Quantidade:</label>
+                <input type="number" id="amountParts" required>
+
+                <label for="pricePerKg">Custo do Material:</label>
+                <input type="number" id="pricePerKg" step="0.01" required>
+
+                <div class="button-group">
+                    <button type="button" onclick="resetValues()">Resetar</button>
+                    <button type="button" onclick="calculate()">Calcular</button>
+                </div>
+            </section>
+
+            <!-- Proposta final -->
+            <section id="propostaFinal">
+                <h2>Proposta Final</h2>
+                <div id="pieceInfo"></div>
+                <div id="costs"></div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
