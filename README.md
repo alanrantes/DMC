@@ -1,29 +1,31 @@
-# 📌 Sistema de Cálculo de Peças de Aço
+# Sistema de Cálculo de Peças de Aço
 
-## 📖 Descrição
-<p align="justify"> Este é um sistema web desenvolvido para calcular os custos e pesos de produção de peças de aço. O usuário insere o número do desenho da peça, e o sistema carrega automaticamente os dados da mesma. Além disso, é possível propor reduções em largura, comprimento e espessura, calcular o custo com base na quantidade desejada e no preço do material.</p>
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 🚀 Funcionalidades
-✔️ **Busca de Peça:** O usuário digita o número do desenho e o sistema carrega os dados automaticamente.  
+Sistema web para calcular **custos e pesos de produção de peças de aço**, permitindo que o usuário insira o número do desenho, carregue os dados da peça, proponha reduções de dimensões e calcule o custo total com base na quantidade e no preço do material.
 
-✔️ **Dados da Peça Atual:** Exibe informações detalhadas como material, espessura, largura, comprimento e blank.  
+## Funcionalidades
 
-✔️ **Proposta de Redução:** O usuário pode inserir novos valores para reduzir dimensões e alterar o material.  
+- Busca de peça pelo número do desenho e carregamento automático de dados  
+- Exibição de informações detalhadas da peça: material, espessura, largura, comprimento e blank  
+- Proposta de redução de dimensões e alteração de material  
+- Cálculo de peso atualizado, diferença de peso e custo total  
+- Botões de ação: "Calcular" e "Resetar"  
 
-✔️ **Cálculo de Custos:** O sistema calcula o peso atualizado, diferença de peso e o custo total com base no preço do material.  
+## Tecnologias
 
-✔️ **Botões de Ação:** "Calcular" para processar os novos valores e "Resetar" para limpar os campos.
+- HTML5  
+- CSS3  
+- JavaScript  
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5**: Estrutura do sistema.
+## Como Executar
 
-- **CSS3**: Estilização para um design moderno e responsivo.
+1. Clone o repositório:  
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+2. Abra o arquivo index.html no navegador de sua preferência
 
-- **JavaScript**: Manipulação de dados e cálculo dos custos e pesos.
-   
-
-## 📈 Melhorias futuras
-- Integração com banco de dados para armazenar histórico de cálculos.
-- Opção de exportar os resultados para PDF ou Excel.
-- Implementação de autenticação de usuários.
-- Interface mais dinâmica e responsiva.
+## Objetivo do Projeto
+Praticar conceitos de HTML, CSS e JavaScript, criando um sistema funcional para cálculo de custos e pesos de peças de aço.
